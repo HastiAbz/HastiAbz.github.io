@@ -4,9 +4,9 @@
   font-family: 'Josefin sans', sans-serif;
   box-sizing: border-box;
 }
+
 .hero{
-  height: 20vh;
-  width: 100%;
+  box-sizing: content-box;
   background-color:white;
   background-size:100%;
   background-position: center;
@@ -14,31 +14,36 @@
 nav{
   display: flex;
   align-items: center;
-  justify-content:space-between;
   padding-top: 20px;
   padding-left: 4%;
-  padding-right: 8%;
+  padding-right: 4%;
+  justify-content:space-between;
 }
+
 .logo{
   color: black;
-  font-size: 35px;
+  font-size: 4vw;
   letter-spacing: 1px;
   cursor: pointer;
+ 
 }
 span{
   color: rgb(106, 136, 136);
 }
-img{
+.logo img{
  border-style: dashed;
  box-sizing: content-box;
  border-width: 1rem;
  border-color: rgb(106, 136, 136);
+ 
 }
 nav ul li{
   list-style-type: none;
   display:inline-block;
-  padding: 10px 25px;
+  padding: 10px 10px;
+  
 }
+
 nav ul li a{
   color: black;
   text-decoration:none;
@@ -49,6 +54,7 @@ nav ul li a:hover{
   color: rgb(106, 136, 136);
   transition: 2s;
 }
+
 .btn{
   background-color:transparent;
   color: black;
@@ -66,66 +72,19 @@ nav ul li a:hover{
   border-style: none;
   width:100%;
 }
-h1{
-  color: white;
-  margin: 20px 0px 20px;
-  font-size: 75px;
-}
-h3{
-  color: white;
-  font-size: 25px;
-  margin-bottom: 50px;
-}
-h4{
-  color: aliceblue;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
-.newslatter form{
-  width:300px;
-  max-width: 100%;
-  position: relative;
-}
-.newslatter form input:first-child {
-  display: inline-block;
-  width: 100%;
-  padding:14px 130px 14px 15px;
-  border:2px solid rgb(106, 136, 136);
-  outline: none;
-  border-radius: 30px;
-}
-.newslatter form input:last-child {
-  position: absolute;
-  display: inline-block;
-  outline: none;
-  border:none;
-  padding: 10px 30px;
-  border-radius: 30px;
-  background-color:rgb(106, 136, 136);
-  color:white;
-  box-shadow: 0px 0px 5px black, 0px 0px 15px black;
-  top:6px;
-  right:6px;
-}
-#myphoto {
-border-radius: 100%;
-border-color: rgb(106, 136, 136);
-border-style:outset;
-float: right;
-margin-right: 220px;
-margin-top: 65px;
-}
 .about{
-  width: 100%;
-  padding:100px 0px;
+  box-sizing: border-box;
   background-color: white;
-  margin-top: 2px;  
-}
+  margin-top: 2px; 
+  padding: 35px;
 
+}
 .about img{
-  height:auto;
-  width:430px;
-  border: none;
+ float: left;
+ margin-right: 20px;
+ margin-bottom: 20px;
+ width: 50%;
+ border: none;
 }
 
 .about-text{
@@ -143,14 +102,14 @@ margin-top: 65px;
 
 .about-text h2{
   color:rgb(106, 136, 136);
-  font-size: 75px;
+  font-size: 4vw;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 .about-text h5{
   color:black;
   letter-spacing:2px;
-  font-size: 22px;
+  font-size: 2.5vw;
   margin-bottom: 25px;
   text-transform: capitalize;
 }
@@ -158,117 +117,74 @@ margin-top: 65px;
   color: black;
   letter-spacing: 1px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 80%;
   margin-bottom: 45px;
+  text-align:left;
+}
+.about-text button{
+  background-color:transparent;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  border:2px solid rgb(106, 136, 136);
+  border-radius: 90%;
 }
  button{
   background-color:transparent;
   color: black;
   text-decoration: none;
-  border: 2px solid  rgb(106, 136, 136);
   font-weight: bold;
   padding: 10px 25px;
-  border-radius: 30px;
-  transition: transform .2s;
+  border-style: none;
  }
 button:hover{
   background-color: transparent;
-  border: 2px solid rgb(106, 136, 136);
   cursor:pointer;
   transform: scale(1.2);
 }
 
 .portfolio{
-  background-color:rgb(30, 29, 29)  ;
   width: 100%;
-  padding:100px 0px;
-}
-
-.title h2{
-  color: rgb(106, 136, 136);
-  font-size: 55px;
-  width: 1130px;
-  margin-left: auto;
-  margin-top: auto;
-}
-.box{
+  height: 300px;
+  background-color:rgb(30, 29, 29) ;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 200px;
-  padding: 50px;
- 
+  flex-direction: column;
+  justify-content: center;
 }
-.html {
-  height:150px;
-  width: 335px;
-  padding: 20px 35px;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow:hidden;
-  text-align:center;
+.portfolio img{
+  width:100px;
+    height: 100px;
+    border-style: none;
+    margin-bottom: 10px;
 }
-.html .button img{
-  width: 80px;
-  height:80px;
-  border-style: none;
 
-}
-.css {
-  height:150px;
-  width: 335px;
-  padding: 20px 35px;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow:hidden;
-  text-align:center;
-}
-.css .button img{
-  width: 80px;
-  height:80px;
-  border-style: none;
-
-}
-.Js {
-  height:150px;
-  width: 335px;
-  padding: 20px 35px;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow:hidden;
-  text-align:center;
-}
-.Js .button img{
-  width: 80px;
-  height:80px;
-  border-style: none;
-
+.portfolio h2{
+  color:rgb(106, 136, 136);
+  padding: 40px;
+  font-size: 4vw;
+  text-align: center;
 }
 h5{
   color:white;
   font-size: 20px;
   margin-bottom: 25px;
 }
-.Resume {
-  padding:10%;
-  width: 100%;;
-  height: 200px;
-  text-align:center;
-  display:flex;
+.Certificates {
+  width: 100%;
+  height: 300px;
+  display: flex;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
-  margin: 20px auto;
   }
-  .Resume h2 {
+  .Certificates h2 {
     color:rgb(106, 136, 136);
     padding: 40px;
-    font-size: 45px;
+    font-size: 4vw;
   }
-  .Resume img{
+  .Certificates img{
     width:100px;
     height: 100px;
     border-style: none;
@@ -277,7 +193,7 @@ h5{
   
  .contact-me{
    width: 100%;
-   height: 200px;
+   height: 300px;
    background-color:rgb(30, 29, 29) ;
    display: flex;
    align-items: center;
@@ -287,20 +203,22 @@ h5{
  .contact-me h2 {
   color:rgb(106, 136, 136);
   padding: 10px;
-  font-size: 45px;
+  font-size: 4vw;
   margin-top: 30px;
  }
  .contact-me img{
   border-style: none;
-  width: 140px;
+  width: 120px;
   height: 130px;
-  padding: 10pxS;
+  padding: 10px;
+
  }
  footer{
   width: 100%;
-  height:20%;
+  height:1.5%;
   text-align:center;
-  margin: 30px;
+  margin: 20px auto;
+  font-size: 1.5vw;
  }
 
 
