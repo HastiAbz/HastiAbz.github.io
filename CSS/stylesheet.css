@@ -221,4 +221,39 @@ h5{
   font-size: 1.5vw;
  }
 
+ .Myresume  img{
+  border: 5px double black;
+  border-radius: 4px;
+  display: block;
+  margin: 45px auto;
+  margin-Top: 20px ;
+  width: 70%;
+ }
+ .Myresume button{
+  border: 2px solid rgb(106, 136, 136);
+  background-color: transparent;
+  margin: 45px auto;
+ display:block;
+ border-radius: 20px;
+font-size: 1.5vw;
+ }
 
+ .grid-container {
+  display: grid;
+  margin: 100px;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  grid-gap:50px;
+
+ }
+
+.grid-item{ 
+ background-color:rgb(185, 196, 196) ;
+ border: 5px double black;
+ padding:2vw;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-style: italic;
+ font-weight: 8000;
+}
